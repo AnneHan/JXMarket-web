@@ -1,0 +1,52 @@
+// 模态框
+
+// 统一加 .hyl-modal 类名
+.hyl-modal {
+  &.ant-modal {
+
+    margin: 50px auto;
+    .ant-modal-header .ant-modal-title .hyl-modal-header-title {
+      padding-right: 35px;
+      svg {
+        fill: #666;
+        &:hover {
+          fill: #333;
+        }
+      }
+    }
+    .ant-modal-content {
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .ant-modal-body {
+      padding: 24px;
+    }
+    // footer 按钮统一居中
+    .ant-modal-footer {
+      text-align: center;
+    }
+    // 满屏的modal 样式调整
+    &.full {
+      transition: all .2s ease;
+      width: 100% !important;
+      height: calc(100vh - 20px) !important;
+      top: 20px;
+      margin: 0 auto;
+      .react-draggable.react-draggable-dragged,
+      .ant-modal-content {
+        height: 100%;
+      }
+      .ant-modal-body {
+        height: 82%;
+        overflow: auto;
+        margin-bottom: 50px;
+      }
+      .ant-modal-footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,520 @@
+html {
+  overflow: hidden;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei,
+    '\5FAE\8F6F\96C5\9ED1', Arial, sans-serif;
+}
+
+body {
+  background: #e3e9ef;
+  font-size: 14px;
+  color: #515a6e;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+a,
+abbr,
+body,
+cite,
+dd,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+iframe,
+input,
+li,
+object,
+ol,
+p,
+pre,
+span,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei,
+    '\5FAE\8F6F\96C5\9ED1', Arial, sans-serif;
+}
+
+/* input number 禁止上下按钮 */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* flex分装 */
+
+.flex,
+.flex-just-center,
+.flex-align-center,
+.flex-1,
+.flex-direction-column,
+.flex-nowrap,
+.flex-jsc-between {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-just-center {
+  justify-content: center;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-jsc-between {
+  justify-content: space-between;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-1-no {
+  flex: 1;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* 展示/隐藏 */
+
+.show {
+  display: block !important;
+  transition: 0.3s all cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.hide {
+  display: none !important;
+  transition: 0.5s all ease;
+}
+
+/* margin 10px */
+
+.m-t-10 {
+  margin-top: 10px !important;
+}
+
+.m-t-20 {
+  margin-top: 20px !important;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+.m-r-15 {
+  margin-right: 15px;
+}
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px !important;
+}
+
+.m-b-20 {
+  margin-bottom: 20px !important;
+}
+
+/* padding 10px */
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+.p-l-15 {
+  padding-left: 15px;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.panel {
+  background-color: #fff;
+  padding: 15px;
+  border-top: 1px solid transparent;
+}
+
+.fa {
+  font-size: 14px;
+}
+
+/* 布局 */
+
+@function col-width($col, $total: 12) {
+  @return percentage($col/$total);
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  .col-1 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(1, 12);
+    max-width: col-width(1, 12);
+  }
+  .col-2 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 1 1 col-width(2, 12);
+    max-width: col-width(2, 12);
+  }
+  .col-3 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(3, 12);
+    max-width: col-width(3, 12);
+  }
+  .col-4 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(4, 12);
+    max-width: col-width(4, 12);
+  }
+  .col-5 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(5, 12);
+    max-width: col-width(5, 12);
+  }
+  .col-6 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(6, 12);
+    max-width: col-width(6, 12);
+  }
+  .col-7 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(7, 12);
+    max-width: col-width(7, 12);
+  }
+  .col-8 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(8, 12);
+    max-width: col-width(8, 12);
+  }
+  .col-9 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(9, 12);
+    max-width: col-width(9, 12);
+  }
+  .col-10 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(10, 12);
+    max-width: col-width(10, 12);
+  }
+  .col-11 {
+    // display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(11, 12);
+    max-width: col-width(11, 12);
+  }
+  .col-12 {
+    display: block;
+    box-sizing: border-box;
+    flex: 0 0 col-width(12, 12);
+    max-width: col-width(12, 12);
+  }
+}
+
+.page {
+  border-radius: 5px;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+  &.page-padding {
+    padding: 15px 20px;
+  }
+  &.bg-white {
+    background-color: white;
+  }
+  .page-title {
+    background: #fff;
+    padding: 20px 20px 0 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    &-operation {
+      padding: 0 0 10px 0;
+      margin-bottom: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .fa {
+      font-size: 20px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+  }
+}
+
+/* TransitionDemo */
+
+.fade-enter {
+  opacity: 0.5;
+  transform: translateX(50px);
+  z-index: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms;
+  z-index: 0;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 0;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 500ms;
+  z-index: 0;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 10px;
+  background-color: #f5f5f5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  background-color: #f5f5f5;
+}
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+/* table 滚动条 */
+.ant-table-content {
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 6px;
+    background-color: #f5f5f5;
+  }
+
+  /*定义滚动条轨道 内阴影+圆角*/
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: #d7d7d7;
+  }
+}
+
+.not-found {
+  margin-top: 100px;
+  .svg-icon {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* 鼠标小手 */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.blue {
+  color: #1890ff;
+}
+.grey {
+  color: #b9b9b9;
+}
+
+.card-wrap {
+  padding: 0 10px 10px;
+}
+
+.border-radius {
+  border-radius: 5px;
+}
+
+.editor-wrap {
+  border: 1px solid #d9d9d9;
+  z-index: 100;
+  .w-e-bar-item,
+  .w-e-bar-divider {
+    height: 30px;
+  }
+  .w-e-bar {
+    font-size: 12px;
+  }
+  .w-e-bar-item button {
+    height: 28px;
+  }
+  .w-e-bar-item-menus-container {
+    margin-top: 30px !important;
+  }
+}
+
+/* 小标题 */
+
+.card-title {
+  border-left: 3px solid;
+  padding: 2px 15px;
+  margin: 5px 0;
+  font-weight: 600;
+  @include border_color('menu-active-bgc');
+  background: #fdfdfd;
+}
+
+.require-icon {
+  color: red;
+  margin-right: 5px;
+}
+
+/* table 中展示图片 */
+.table-td-img {
+  height: 22px;
+  width: 75px;
+  object-fit: cover;
+}
+
+/* table 操作 按钮样式*/
+.table-tool-buttom {
+  color: #1890ff;
+  cursor: pointer;
+}
+
+// 小提示文字
+.notice-message {
+  font-size: 13px;
+  color: #666;
+  .special {
+    color: $blue;
+  }
+}
+
+/* 文字单行... */
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 详情描述列表限高 */
+.last-item {
+  word-break: break-all;
+  max-height: 200px;
+  overflow: auto;
+  &.json {
+    max-height: 350px;
+  }
+}
+
+#rrwebPlayer{
+  .replayer-wrapper{
+    transform: scale(0.6) translate(-50%, -50%) !important;
+  }
+  .rr-player {
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+    height: 560px !important;
+    display: none;
+    flex-direction: column;
+    &:first-child {
+      display: flex;
+    }
+    .rr-player__frame {
+      width: 100% !important;
+      flex: 1;
+    }
+  }
+}
+
+.w-full {
+  width: 100%;
+}
+
+
+@import './fontawesome/font-awesome.scss';
+@import './proComps.css';
+@import '@/assets/styles/antds/table.scss';
+@import '@/assets/styles/antds/modal.scss';
+@import '@/assets/styles/antds/backTop.scss';
+@import '@/assets/styles/antds/formItem.scss';
+@import '@/assets/styles/antds/descriptions.scss';
+@import '@/assets/styles/antds/tab.scss';

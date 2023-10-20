@@ -1,0 +1,26 @@
+.detail-descriptions {
+  width: 100%;
+  .ant-descriptions-item-content {
+    width: 220px;
+  }
+}
+
+.detail-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-right: 5px;
+  object-fit: cover;
+}
+
+.detail-descriptions-content {
+  // padding: 0 24px;
+  .ant-descriptions .ant-descriptions-view .ant-descriptions-row .ant-descriptions-item-label {
+    width: 180px;
+  }
+}
+.appversion-detail-descriptions-content {
+  .ant-descriptions .ant-descriptions-view .ant-descriptions-row .ant-descriptions-item-label {
+    width: 200px;
+  }
+}

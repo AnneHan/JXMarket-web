@@ -1,0 +1,112 @@
+:global {
+  .menu-add-btn {
+    margin-bottom: 0;
+  }
+  .right-menu-button {
+    width: 70px;
+    text-align: center;
+    .ant-dropdown-menu-item:first-child {
+      border-bottom: 1px solid #f1f1f1;
+    }
+  }
+  .menu-tree {
+    .ant-tree-list-scrollbar.ant-tree-list-scrollbar-show {
+      width: 2px !important;
+    }
+  }
+  .menu-search {
+    margin-bottom: 15px;
+  }
+}
+.menuWarp {
+  height: 92%;
+}
+.menuContent {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  .tree {
+    width: 40%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+    .treeTitle {
+      padding: 14px 16px;
+      border-bottom: 1px solid #e8eaec;
+    }
+
+    .treeBtn {
+      width: 100%;
+      padding: 14px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e8eaec;
+
+      button {
+        width: 105px;
+        margin-bottom: 10px;
+        flex-shrink: 0;
+        margin-right: 10px;
+        gap: 3px !important;
+      }
+    }
+    .search {
+      height: 47px;
+    }
+    .treeMenu {
+      flex: 1;
+      overflow: auto;
+    }
+    .treeStructure {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 15px 0 15px;
+      overflow: hidden;
+      position: relative;
+      .spin {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        max-height: 422px;
+        min-height: 153px;
+        z-index: 1000;
+        background: rgba($color: #fff, $alpha: 0.6);
+        bottom: 0;
+        left: 0;
+        padding-top: 25px;
+        padding-left: 46%;
+      }
+    }
+  }
+
+  .edit {
+    height: 500px;
+    margin-left: 12px;
+    flex: 1;
+    border-radius: 5px;
+    background: #fff;
+  }
+}
+
+.editTitel {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e8eaec;
+}
+
+.compile {
+  padding: 20px;
+  .reminder {
+    padding: 5px 10px;
+    border: 1px solid #abdcff;
+    background-color: #f0faff;
+  }
+}
+
+.del {
+  color: red;
+}

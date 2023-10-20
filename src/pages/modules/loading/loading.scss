@@ -1,0 +1,18 @@
+.loading_wrap {
+    height: 100px;
+
+    .loading_item {
+        background: white;
+        border: 1px solid #c3c6cf;
+        border-radius: 15px;
+        /* display: table-cell; */
+        text-align: center;
+        vertical-align: middle;
+        height: 180px;
+        margin: 5px;
+    }
+}
+
+.global_loading {
+    margin-top: 350px;
+}

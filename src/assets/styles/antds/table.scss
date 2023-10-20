@@ -1,0 +1,15 @@
+// 全局table样式修改 统一加 .hyl-table 类名
+// 上下不加padding 加类名 hyl-table + ant-pro-card-no-padding
+.hyl-table {
+  &.ant-pro-card-no-padding {
+    .ant-pro-card-body,.ant-pro-table-search {
+      padding: 0 24px;
+      margin-bottom: 0;
+    }
+  }
+  .ant-table {
+    .ant-table-tbody > tr > td {
+      font-size: 12px;
+    }
+  }
+}

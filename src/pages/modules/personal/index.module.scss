@@ -1,0 +1,141 @@
+:global {
+  .personal-tabs > .ant-tabs-nav:before {
+    border-bottom: 2px solid #e0e0e0;
+  }
+  .personal-tabs {
+    .ant-tabs-nav-wrap {
+      height: 62px;
+    }
+    .ant-tabs-nav {
+      margin-bottom: 30px;
+    }
+  }
+  .personal-upload {
+    .ant-card-head {
+      border-bottom: 2px solid #f0f0f0;
+    }
+    .ant-card-head-title {
+      height: 60.5px;
+      line-height: 28px;
+      font-size: 14px;
+    }
+    .ant-upload.ant-upload-select-picture-card,
+    .ant-upload-list-picture-card-container {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    .ant-upload-list-item {
+      padding: 0;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+  .personal-row {
+    .ant-col-9 {
+      padding-right: 0 !important;
+    }
+  }
+  .personal-card {
+    .ant-card-body {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 25px;
+  .infoName {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 7px 0 3px;
+  }
+  .contactInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    div {
+      width: 48%;
+      line-height: 16px;
+      &:first-child {
+        text-align: right;
+      }
+    }
+    span {
+      width: 100%;
+    }
+    b {
+      line-height: 28px;
+    }
+  }
+}
+.describeInfo {
+  .PersonalDescription {
+    height: 32px;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 10px;
+    i {
+      color: #999;
+      margin-left: 2px;
+      margin-right: 6px;
+    }
+    span {
+      color: #666;
+      font-weight: bold;
+    }
+  }
+  .describe {
+    margin-bottom: 25px;
+    color: #666;
+  }
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  .avaterTxt {
+    > div {
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1111;
+    }
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .avaterText {
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: -1;
+      color: #fff;
+    }
+  }
+}
+.avatar:hover {
+  cursor: pointer;
+  .avaterTxt {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    z-index: 111;
+    background: rgba($color: #000000, $alpha: 0.5);
+    border-radius: 50%;
+    font-weight: bold;
+  }
+}

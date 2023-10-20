@@ -1,0 +1,55 @@
+.center {
+    display: flex;
+    justify-content: center
+}
+
+.proCardHeader {
+    p {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        border-radius: 50%;
+        color: #40a9ff;
+        background-color: #e6f7ff;
+    }
+    .circle {
+        color: #9254de;
+        background-color: #f9f0ff;
+    }
+    .justify {
+        color: #73d13d;
+        background-color: #f6ffed;
+    }
+    .plane {
+        color: #ffa940;
+        background-color: #fff7e6;
+    }
+}
+
+.proCardNumber {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+
+.proCardFooter {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.proCardCenter {
+    height: 121px;
+}
+
+.satisfaction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.monitorFooter {
+    height: 180px;
+}

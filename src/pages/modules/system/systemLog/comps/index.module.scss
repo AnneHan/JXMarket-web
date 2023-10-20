@@ -1,0 +1,13 @@
+:global {
+  .system-log {
+    .ant-descriptions-view .ant-descriptions-row .ant-descriptions-item-label {
+      width: 150px;
+    }
+  }
+  .ant-tooltip{
+    .ant-tooltip-inner{
+      max-height: 500px;
+      overflow: auto;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+$white: #FFFFFF;
+$grayTheme:#262D33;
+$gray:#b5b5b5;
+$blue:#2173dc;
+$deepBlue:#3f51b5;
+$purple: #673ab7;
+$mask:rgba(55, 55, 55, .5);
+$defaultFontColor:#515a6e;
+
+//字体定义规范
+$font_little_s:10px;
+$font_little:12px;
+$font_medium_s:14px;
+$font_medium:16px;
+$font_large_s:18px;
+$font_large:20px;
+
+// 主题 ['theme-gray', "theme-blue", "theme-deepBlue", 'theme-purple']
+
+$themes:(
+    gray:(
+        theme:#262D33,
+        deep-theme:#131619,
+        bg-color: $white,
+        font-color:#b5b5b5,
+        deep-font-color:$defaultFontColor,
+        header-font:#515a6e,
+        header-bgc:$white,
+        menu-bgc: #262D33,
+        menu-hover:$white,
+        menu-bg-hover:#414d58,
+        menu-active: $white,
+        menu-active-bgc:$blue),
+    blue:(
+        theme:$blue,
+        deep-theme:$blue,
+        bg-color: $white,
+        font-color: $defaultFontColor,
+        deep-font-color: $defaultFontColor,
+        header-font: $white,
+        header-bgc: $blue,
+        menu-bgc: $white,
+        menu-hover: $blue,
+        menu-bg-hover:#f0faff,
+        menu-active: $white,
+        menu-active-bgc: $blue,
+    ),
+    deepBlue:(
+        theme:$deepBlue,
+        deep-theme:$deepBlue,
+        bg-color: $white,
+        font-color:$defaultFontColor,
+        deep-font-color: $defaultFontColor,
+        header-font: $white,
+        header-bgc: $deepBlue,
+        menu-bgc: $white,
+        menu-hover: $deepBlue,
+        menu-bg-hover: #f0faff,
+        menu-active: $white,
+        menu-active-bgc: $deepBlue,
+    ),
+    purple:(
+        theme: $purple,
+        deep-theme:$purple,
+        bg-color: $white,
+        font-color:$defaultFontColor,
+        deep-font-color:$defaultFontColor,
+        header-font: $white,
+        header-bgc: $purple,
+        menu-bgc: $white,
+        menu-hover:$purple,
+        menu-bg-hover:#eee6fb,
+        menu-active:$white,
+        menu-active-bgc:$purple,
+    )
+)
