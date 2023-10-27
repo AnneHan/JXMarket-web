@@ -1,6 +1,14 @@
-# 锦绣超市进销存信息管理系统前端
+# 锦绣超市进销存信息管理系统-前端
 
-技术栈：react / mobx / typtscript / sass / antd
+本项目是本科的毕业设计作品，主要是实现超市的进销存信息管理。采用前后端分离的开发方式，后端使用SpringBoot，前端使用React。
+
+技术栈：react / mobx / typescript / sass / antd
+
+代码地址：
+
+前端：[https://github.com/AnneHan/JXMarket-web.git](https://github.com/AnneHan/JXMarket-web)
+
+后端：[https://github.com/AnneHan/JXMarket-Backend.git](https://github.com/AnneHan/JXMarket-Backend)
 
 # 启动
 

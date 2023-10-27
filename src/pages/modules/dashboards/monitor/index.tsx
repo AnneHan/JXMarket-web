@@ -19,8 +19,8 @@ const Monitor: React.FC<IRouterProps> = (props: IRouterProps): React.ReactElemen
               <i className="fa fa-users" aria-hidden="true"></i>
             </p>
           </div>
-          <div className={`${styles.center} ${styles.proCardNumber}`}>21.2 k</div>
-          <div className={styles.center}>总访问人数</div>
+          <div className={`${styles.center} ${styles.proCardNumber}`}>0.2 k</div>
+          <div className={styles.center}>总会员数</div>
           <div className={`${styles.center} ${styles.proCardFooter}`}>
             <Avatar.Group>
               <Avatar src="https://joeschmoe.io/api/v1/random" />
@@ -44,11 +44,11 @@ const Monitor: React.FC<IRouterProps> = (props: IRouterProps): React.ReactElemen
               <i className="fa fa-dot-circle-o"></i>
             </p>
           </div>
-          <div className={`${styles.center} ${styles.proCardNumber}`}>1.6 k</div>
-          <div className={styles.center}>点击量（近30天）</div>
+          <div className={`${styles.center} ${styles.proCardNumber}`}>8.6 k</div>
+          <div className={styles.center}>总销售量</div>
           <div className={`${styles.center} ${styles.proCardFooter}`}>
             <Statistic
-              value={11.28}
+              value={12.22}
               precision={2}
               valueStyle={{ color: '#19be6b' }}
               prefix={<i className="fa fa-angle-up" aria-hidden="true"></i>}
@@ -62,11 +62,11 @@ const Monitor: React.FC<IRouterProps> = (props: IRouterProps): React.ReactElemen
               <i className="fa fa-paper-plane-o"></i>
             </p>
           </div>
-          <div className={`${styles.center} ${styles.proCardNumber}`}>826.0</div>
-          <div className={styles.center}>到达量（近30天）</div>
+          <div className={`${styles.center} ${styles.proCardNumber}`}>0.6 k</div>
+          <div className={styles.center}>库存量</div>
           <div className={`${styles.center} ${styles.proCardFooter}`}>
             <Statistic
-              value={9.3}
+              value={8.2}
               precision={2}
               valueStyle={{ color: '#cf1322' }}
               prefix={<i className="fa fa-angle-down" aria-hidden="true"></i>}
@@ -84,7 +84,7 @@ const Monitor: React.FC<IRouterProps> = (props: IRouterProps): React.ReactElemen
           <div className={styles.center}>转化率（近30天）</div>
           <div className={`${styles.center} ${styles.proCardFooter}`}>
             <Statistic
-              value={11.28}
+              value={10.68}
               precision={2}
               valueStyle={{ color: '#19be6b' }}
               prefix={<i className="fa fa-angle-up" aria-hidden="true"></i>}
@@ -99,7 +99,13 @@ const Monitor: React.FC<IRouterProps> = (props: IRouterProps): React.ReactElemen
         </ProCard>
         <ProCard colSpan={6} direction="column" gutter={8} ghost bordered>
           <ProCard title="当前在线" layout="default" bordered headerBordered>
-            <div className={styles.proCardCenter}></div>
+            <div className={styles.proCardCenter}>
+              <div>
+                <span>用户：admin</span>
+                <p> </p>
+                <span>用户：AnneHan</span>
+              </div>
+            </div>
           </ProCard>
           <ProCard
             title="当前活跃度"
